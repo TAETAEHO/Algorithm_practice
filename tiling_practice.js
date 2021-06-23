@@ -4,7 +4,7 @@
 
 // Solution 1. Dynamic Programming을 이용한 tiling
 const tiling = (n) => {
-    /*
+  /*
     1. n=0 -> 0개
     2. n=1 -> (a, b) -> 1개
     3. n=2 -> (ab, ab), (aa, bb) -> 2개
@@ -18,25 +18,25 @@ const tiling = (n) => {
     f(4) = 5 = f(3) + f(2)
     */
 
-    // memoization을 위한 memo 배열 변수 선언
-    let memo = [];
+  // memoization을 위한 memo 배열 변수 선언
+  let memo = [];
 
-    // memoization을 위한 함수 선언
-    const newTiling = (n) => {
-        // n이 2이하일 때는 n을 리턴한다.
-        if(n <= 2) {
-            return n;
-        } else {
-            // memo 변수에 값이 있는지 확인한다.
-            if(memo[n] !== undefined) {
-                return memo[n];
-            } else {
-                // 없으면 재귀적으로 돌려준다.
-                memo[n] = newTiling(n-1) + newTiling(n-2);
-                return memo[n];
-            }
-        }
-    };
-    // 최종 newTiling 리턴
-    return newTiling(n);
+  // memoization을 위한 함수 선언
+  const newTiling = (n) => {
+    // n이 2이하일 때는 n을 리턴한다.
+    if (n <= 2) {
+      return n;
+    } else {
+      // memo 변수에 값이 있는지 확인한다.
+      if (memo[n] !== undefined) {
+        return memo[n];
+      } else {
+        // 없으면 재귀적으로 돌려준다.
+        memo[n] = newTiling(n - 1) + newTiling(n - 2);
+        return memo[n];
+      }
+    }
+  };
+  // 최종 newTiling 리턴
+  return newTiling(n);
 };
