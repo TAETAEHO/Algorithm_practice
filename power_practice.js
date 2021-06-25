@@ -21,6 +21,11 @@ function power(base, exponent) {
 
 // Solution 3. 분할정복을 이용한 거듭제곱 -> 시간복잡도 O(logN)
 function power(base, exponent) {
+  // 지수가 0이면 1이다.
+  if (exponent === 0) {
+    return 1;
+  }
+
   // exponent를 반으로 나눈다. 홀수의 경우를 대비해 Math.floor한다.
   let halfExponent = Math.floor(exponent / 2);
 
