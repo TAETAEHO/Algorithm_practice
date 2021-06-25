@@ -10,6 +10,11 @@ function power(base, exponent) {
 
 // Solution 2. for문을 이용한 거듭제곱
 function power(base, exponent) {
+  // 지수가 0이면 1이다.
+  if (exponent === 0) {
+    return 1;
+  }
+
   let pow = 1;
 
   for (let i = 1; i <= exponent; i++) {
