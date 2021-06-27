@@ -31,7 +31,7 @@ function power(base, exponent) {
     return 1;
   }
 
-  // exponent를 반으로 나눈다. 홀수의 경우를 대비해 Math.floor한다.
+  // exponent를 반으로 나눈다. 홀수의 경우를 대비해 Math.floor한다
   let halfExponent = Math.floor(exponent / 2);
 
   // 반으로 나눈 지수를 재귀적으로 돌린다.
