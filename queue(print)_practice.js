@@ -1,5 +1,4 @@
 function queuePrinter(bufferSize, capacities, documents) {
-  // TODO: 여기에 코드를 작성합니다.
   /**
    * bufferSize : 인쇄작업 목록크기(number) -> 1<=size<=100
    * capacities : 최대 용량(number) -> <=100kib
