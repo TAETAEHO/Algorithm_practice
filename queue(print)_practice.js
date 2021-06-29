@@ -33,13 +33,13 @@ function queuePrinter(bufferSize, capacities, documents) {
     totalSum = totalSum - queue.pop(); // 7 - 0 = 7 -> queue = [7]
     currentDocument = documents.shift(); // documents = [4, 5, 6] -> documents.shift() = 4
 
-    // totalSum + currentDocument가 capacities보다 큰지 확인
+    // totalSum + currentDocument가 capacities보다 큰지 확인 -> 7 + 4 = 11
     if (totalSum + currentDocument <= capacities) {
-      queue.unshift(currentDocument); // [4, 7]
-      totalSum = totalSum + currentDocument;
+      queue.unshift(currentDocument); // queue = [4, 0]
+      totalSum = totalSum + currentDocument; // 0 + 4 = 4
     } else {
       documents.unshift(currentDocument); // documents = [5, 6] -> documents = [4, 5, 6]
-      queue.unshift(0); // queue = [4] -> queue = [0, 4]
+      queue.unshift(0); // queue = [7] -> queue = [0, 7]
     }
     // 1초씩 시간 증가
     cnt++;
