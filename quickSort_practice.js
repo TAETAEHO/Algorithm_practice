@@ -69,3 +69,26 @@ function divide(arr, left, right, pivot) {
   }
   return left;
 }
+
+// Solution 3. -> callback
+let quickSort = (arr, callback = (item) => item) => {
+  // 기준이 되는 요소 정하기
+  let mid = arr[0];
+  // 기준이 되는 요소의 왼쪽, 오른쪽 정하기
+  let left = [];
+  let right = [];
+
+  // arr 탐색 -> 기준이 되는 요소를 arr[0]번째로 세팅했으니까 1번째 인덱스부터 탐색
+  for (let i = 1; i < arr.length; i++) {
+    // 작은 요소들은 left 배열에 넣기
+    if (callback(arr[i]) < callback(mid)) {
+      left.push(arr[i]);
+    } else {
+      // 나머지 요소들은 right 배열에 넣기
+      right.push(arr[i]);
+    }
+  }
+
+  // left, right, mid배열을 가지고 재귀적으로 계속 정렬해준다.
+  return quickSort(left).concat(mid, quickSort(right));
+};
