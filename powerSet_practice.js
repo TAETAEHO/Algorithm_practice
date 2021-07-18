@@ -7,8 +7,8 @@
 function powerSet(str) {
   // str 문자열을 배열로 만들어주고 소팅한다.
   let arr = str.split("").sort();
-  // 최종적으로 리턴할 배열 변수를 만들어준다.
-  let result = [];
+  // 최종적으로 리턴할 배열 변수를 만들어준다. (공집합 포함)
+  let result = [""];
 
   // result와 arr[i]를 받아서 부분집합을 만들 함수를 만들어준다.
   let subset = (result, target) => {
