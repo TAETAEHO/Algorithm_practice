@@ -42,6 +42,8 @@ const rotate = (matrix) => {
   let newMatrix = [];
 
   // matrix 탐색
+  // 1 x 1 matrix를 고려하여 i는 matrix[0].length까지 탐색
+  // matrix.length까지 탐색할 경우 가로 세로의 길이가 다른 matrix는 탐색할 수 없다.
   for (let i = 0; i < matrix[0].length; i++) {
     // [j][i]로 출력하여 넣어줄 배열 변수 생성
     let rotatedArr = [];
