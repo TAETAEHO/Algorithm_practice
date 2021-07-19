@@ -53,6 +53,8 @@ function powerSet(arr) {
     if (depth === arr.length) {
       // flag 배열에 true인 요소에 같은 인덱스에 있는 arr의 요소들을 result에다가 넣어준다.
       result.push(arr.filter((value, index) => flag[index]));
+
+      return;
     } else {
       // 왼쪽 노드들은 true로 바꿔준다. -> 요소가 포함된 경우
       flag[depth] = true;
