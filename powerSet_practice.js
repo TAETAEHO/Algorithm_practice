@@ -23,7 +23,7 @@ function powerSet(str) {
       // 합쳐진 copy[i]를 result에 넣어준다.
       result.push(copy[i]);
     }
-    return result;
+    // return;
   };
 
   // result를 탐색한다.
