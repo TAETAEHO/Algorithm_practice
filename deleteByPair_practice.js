@@ -24,3 +24,24 @@ const deleteByPair = (alphabet) => {
     return 0;
   }
 };
+
+// failed Solution
+// function solution(s) {
+//   let arr = s.split("");
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i + 1]) {
+//       arr.splice(i, 2);
+//     }
+//   }
+
+//   if (arr[0] === arr[1]) {
+//     arr.splice(0);
+//   }
+
+//   if (arr.length === 0) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
