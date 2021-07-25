@@ -18,7 +18,7 @@ function divideChocolate(M, N) {
   // 최대공약수만큼 탐색
   for (let i = 1; i < tempGcd; i++) {
     // 약수인 경우
-    if (tempGcd % i === 0) {
+    if (gcd % i === 0) {
       tempGcd = gcd / i;
 
       if (i >= gcd / i) {
