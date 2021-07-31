@@ -38,7 +38,6 @@ function power(base, exponent) {
   let recursive = power(base, halfExponent);
 
   let result = (recursive * recursive) % 94906249;
-
   // 지수가 홀수인 경우는 마지막에 base를 곱해준다.
   if (exponent % 2 !== 0) {
     result = (result * base) % 94906249;
