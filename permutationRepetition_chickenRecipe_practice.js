@@ -15,6 +15,8 @@ function newChickenRecipe(stuffArr, choiceNum) {
   for (let i = 0; i < stuffArr.length; i++) {
     if (checkZeroCnt(stuffArr[i])) {
       stuffArr.splice(stuffArr.indexOf(stuffArr[i]), 1);
+      // splice는 mutable하기 떄문에 splice가 일어난 경우 i--를 해줘서 전체 배열안에 요소를 탐색 할 수 있게 해준다.
+      i--;
     }
   }
 
