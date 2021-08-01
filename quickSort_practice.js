@@ -78,6 +78,8 @@ let quickSort = (arr, callback = (item) => item) => {
   let left = [];
   let right = [];
 
+  if (arr.length < 2) return arr;
+
   // arr 탐색 -> 기준이 되는 요소를 arr[0]번째로 세팅했으니까 1번째 인덱스부터 탐색
   for (let i = 1; i < arr.length; i++) {
     // 작은 요소들은 left 배열에 넣기
