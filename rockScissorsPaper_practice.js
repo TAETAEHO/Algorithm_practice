@@ -4,7 +4,7 @@
  * 세 번의 선택으로 가능한 모든 경우의 수를 구하는 함수를 작성합니다.
  */
 
-// Solution
+// Solution 1.
 function rockScissorsPaper(rounds) {
   // rounds 설정
   rounds = rounds || 3;
@@ -31,6 +31,34 @@ function rockScissorsPaper(rounds) {
 
   // 재귀 함수 호출 -> 경우의 수 초기값 []
   recursive(rounds, []);
+  return result;
+}
+
+console.log(rockScissorsPaper(5));
+
+// Solution 2.
+function rockScissorsPaper(rounds) {
+  rounds = rounds || 3;
+  let result = [];
+  // lookup tagble
+  let rps = ["rock", "paper", "scissors"];
+
+  let permutation = (rps, buckets) => {
+    // base case
+    if (buckets.length === rounds) {
+      result.push(buckets);
+      return;
+    }
+
+    for (let i = 0; i < rps.length; i++) {
+      let curEl = rps[i];
+
+      permutation(rps, buckets.concat(curEl));
+    }
+  };
+
+  // 중복순열
+  permutation(rps, []);
   return result;
 }
 
