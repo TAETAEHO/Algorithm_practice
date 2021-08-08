@@ -7,8 +7,8 @@ const boardGame = (board, operation) => {
   // board의 크기를 나타내기 위한 변수 생성
   let boardLen = board.length;
   // (x, y) 좌표 변수 생성
-  const X = 0;
-  const Y = 0;
+  let X = 0;
+  let Y = 0;
   // 최종적으로 리턴할 숫자의 합을 나타내기 위한 변수 생성
   let sum = 0;
 
@@ -57,8 +57,8 @@ const boardGame = (board, operation) => {
     R: [0, 1],
   };
   // (x, y) 좌표 변수 생성
-  const X = 0;
-  const Y = 0;
+  let X = 0;
+  let Y = 0;
   // 최종적으로 리턴할 숫자의 합을 나타내기 위한 변수 생성
   let sum = 0;
 
