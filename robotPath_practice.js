@@ -12,9 +12,9 @@ const robotPath = (room, src, dst) => {
   const visited = new Array(room.length).fill(0).map(() => new Array());
   // 1 -> 카운트(시간)
   let queue = [[...src, 1]];
-  // 세로, 가로 길이
-  let M = room.length - 1;
-  let N = room[0].length - 1;
+  // 세로, 가로 길이 -> length - 1까지하면 허용되지 못하는 범위가 발생되니까 length로 설정하는게 맞는거같다.
+  let M = room.length;
+  let N = room[0].length;
   let DIR = [
     [-1, 0],
     [1, 0],
@@ -31,7 +31,7 @@ const robotPath = (room, src, dst) => {
       let dX = X + DIR[i][1];
 
       // 유효성 검사
-      if (dY < 0 || dX < 0 || dY > M || dX > N) continue;
+      if (dY < 0 || dX < 0 || dY >= M || dX >= N) continue;
       if (room[dY][dX] === 1) continue;
       if (visited[dY][dX]) continue;
 
@@ -49,8 +49,8 @@ const robotPath = (room, src, dst) => {
   room[src[0]][src[1]] = 1;
 
   // 세로, 가로 길이
-  let M = room.length - 1;
-  let N = room[0].length - 1;
+  let M = room.length;
+  let N = room[0].length;
   let DIR = [
     [-1, 0],
     [1, 0],
@@ -59,7 +59,7 @@ const robotPath = (room, src, dst) => {
   ];
 
   // 유효성 검사
-  let isValid = (y, x) => y >= 0 && y <= M && x >= 0 && x <= N;
+  let isValid = (y, x) => y >= 0 && y < M && x >= 0 && x < N;
 
   let queue = [src];
 
