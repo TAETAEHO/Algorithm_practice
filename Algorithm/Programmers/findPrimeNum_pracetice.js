@@ -26,8 +26,10 @@ function findPrimeNum(numbers) {
 
     for (let i = 0; i < numbers.length; i++) {
       // 중복체크
+      // '11' 이런식으로 같은걸 두개 붙여서 만들수 없으니까 같은 인덱스에 있는 거는 못붙이게 걸러준다.
       if (buckets.includes(i)) continue;
 
+      // numbers[i]는 '1', '7'
       let curEl = number + numbers[i];
 
       // 유효성 검사
