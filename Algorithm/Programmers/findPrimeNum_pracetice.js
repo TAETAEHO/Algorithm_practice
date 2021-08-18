@@ -19,6 +19,9 @@ function findPrimeNum(numbers) {
 
   const permutation = (number, buckets) => {
     // base case
+    // numbers -> ['1', '7'], numbers.length = 2
+    // number -> 초기값 : '', number.length = 0
+    // number -> '1' -> '17' -> '7' -> '71' 이런식
     if (number.length === numbers.length) return;
 
     for (let i = 0; i < numbers.length; i++) {
