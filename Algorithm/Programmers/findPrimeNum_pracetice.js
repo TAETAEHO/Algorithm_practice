@@ -12,43 +12,91 @@
  * 11과 011은 같은 숫자로 취급합니다.
  */
 
-// Solution -> 미완
-function findPrimeNum(numbers) {
-  let result = [];
-  let number = "";
+// // Solution -> 미완
+// function findPrimeNum(numbers) {
+//   let result = [];
+//   let number = "";
 
-  const permutation = (number, buckets) => {
+//   const permutation = (number, buckets) => {
+//     // base case
+//     // numbers -> ['1', '7'], numbers.length = 2
+//     // number -> 초기값 : '', number.length = 0
+//     // number -> '1' -> '17' -> '7' -> '71' 이런식
+//     if (number.length === numbers.length) return;
+
+//     for (let i = 0; i < numbers.length; i++) {
+//       // 중복체크
+//       // '11' 이런식으로 같은걸 두개 붙여서 만들수 없으니까 같은 인덱스에 있는 거는 못붙이게 걸러준다.
+//       if (buckets.includes(i)) continue;
+
+//       // numbers[i]는 '1', '7'
+//       let curEl = number + numbers[i];
+
+//       // 유효성 검사
+//       if (!result.includes(curEl) && isPrime(Number(curEl))) {
+//         result.push(curEl);
+//       }
+
+//       permutation(curEl, buckets.concat(i));
+//     }
+//   };
+
+//   // permutation -> 중복가능
+//   permutation(number, []);
+
+//   for (let char of result) {
+//     if (char[0] === "0") result.splice(result.indexOf(char), 1);
+//   }
+
+//   return result.length;
+// }
+
+// const isPrime = (num) => {
+//   if (num === 2) return true;
+//   if (num <= 1) return false;
+
+//   for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+//     if (num % i === 0) return false;
+//   }
+//   return true;
+// };
+
+// Solution
+function findPrimeNum(numbers) {
+  let result = "";
+  let stack = [];
+
+  // permutation
+  const permutation = (result, buckets) => {
     // base case
-    // numbers -> ['1', '7'], numbers.length = 2
-    // number -> 초기값 : '', number.length = 0
-    // number -> '1' -> '17' -> '7' -> '71' 이런식
-    if (number.length === numbers.length) return;
+    if (result.length === numbers.length) return;
 
     for (let i = 0; i < numbers.length; i++) {
-      // 중복체크
-      // '11' 이런식으로 같은걸 두개 붙여서 만들수 없으니까 같은 인덱스에 있는 거는 못붙이게 걸러준다.
-      if (buckets.includes(i)) continue;
+      // 같은 인덱스끼리는 못합침
+      if (buckets.indexOf(i) !== -1) continue;
 
-      // numbers[i]는 '1', '7'
-      let curEl = number + numbers[i];
+      let curEl = result + numbers[i];
 
       // 유효성 검사
-      if (!result.includes(curEl) && isPrime(Number(curEl))) {
-        result.push(curEl);
+      if (!stack.includes(curEl) && Number(curEl) >= 2) {
+        if (isPrime(Number(curEl))) stack.push(curEl);
       }
 
       permutation(curEl, buckets.concat(i));
     }
   };
 
-  // permutation -> 중복가능
-  permutation(number, []);
+  // 중복불가 순열
+  permutation(result, []);
 
-  for (let char of result) {
-    if (char[0] === "0") result.splice(result.indexOf(char), 1);
+  for (let i = 0; i < stack.length; i++) {
+    if (stack[i][0] === "0") {
+      stack.splice(stack.indexOf(stack[i]), 1);
+      i--;
+    }
   }
 
-  return result.length;
+  return stack.length;
 }
 
 const isPrime = (num) => {
@@ -60,3 +108,6 @@ const isPrime = (num) => {
   }
   return true;
 };
+
+console.log(findPrimeNum("17"));
+console.log(findPrimeNum("011"));
