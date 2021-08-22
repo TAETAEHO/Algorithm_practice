@@ -22,6 +22,7 @@ function subsetSum(set, bound) {
 
   for (let i = 0; i < set.length; i++) {
     // subSum 부분도 수정이 필요하다.
+    // subSum을 set의 모든 요소를 더해서 그거랑 bound랑 비교하면 될거같은데 안된다...
     subSum = set[i] + set[i + 1];
     for (let j = i + 1; j < set.length; j++) {
       sum = set[i] + set[j];
