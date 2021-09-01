@@ -30,3 +30,9 @@
   - sequelize로 DB설계 시 중복 컬럼을 허용하지 않게 설계 할 수 있는지 확인이 필요하다.
   - token에 담긴 유저정보를 req.headers.cookie에서 받아오지 못하고 클라이언트에서 보낸 req.headers.authorization으로 받아온다.  
     따라서 포스트맨으로 테스트 시 서버쪽에서 테스트가 진행되지 않는데 req.body에 회원정보를 받아오고 req.headers.cookie에 토큰 정보를 받아왔을 때 CORS 핸들링을 보완해야한다.
+
+## 에러 핸들링
+
+- 2021.09.01 : 리액트에서 자동으로 페이지 새로고침을 원하는 경우
+  - **window.location.replace('/경로')**
+  - [리액트에서 페이지 새로고침](https://www.notion.so/useHistory-5f738c684b2b4903bde661256c37b664)
