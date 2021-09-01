@@ -31,8 +31,18 @@
   - token에 담긴 유저정보를 req.headers.cookie에서 받아오지 못하고 클라이언트에서 보낸 req.headers.authorization으로 받아온다.  
     따라서 포스트맨으로 테스트 시 서버쪽에서 테스트가 진행되지 않는데 req.body에 회원정보를 받아오고 req.headers.cookie에 토큰 정보를 받아왔을 때 CORS 핸들링을 보완해야한다.
 
-## 에러 핸들링
+## **에러 핸들링**
 
-- 2021.09.01 : 리액트에서 자동으로 페이지 새로고침을 원하는 경우
-  - **window.location.replace('/경로')**
-  - [리액트에서 페이지 새로고침](https://www.notion.so/useHistory-5f738c684b2b4903bde661256c37b664)
+- 2021.08.31 : refreshToken를 req.headers.cookie에 담아 post요청하지 않고 **로컬스토리지에 담아둘 때**
+  - `localStorage.setItem("key", payload);`
+    - 로컬스토리지에 담아두기
+  - `localStorage.getItem("key";`
+    - 로컬스토리지에서 얻어오기
+  - `localStorage.removeItem("key");`
+    - 로컬스토리지에서 삭제하기
+- 2021.09.01
+  - 리액트에서 자동으로 페이지 새로고침을 원하는 경우
+    - **window.location.replace('/경로')**
+    - **[리액트에서 페이지 새로고침](https://www.notion.so/useHistory-5f738c684b2b4903bde661256c37b664)**
+  - axios.get 요청 시 무한 랜더링 해결
+    - **useEffect()** 로 axios 요청 부분을 감싸준다.
