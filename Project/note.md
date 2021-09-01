@@ -1,8 +1,8 @@
 # MunjiOut (codestates first project)
 
-## 링크
+## 프로젝트 레파지토리 링크
 
-- [MunjiOut](https://github.com/TAETAEHO/MunjiOut)
+- **[MunjiOut](https://github.com/TAETAEHO/MunjiOut)**
 
 ## Position
 
