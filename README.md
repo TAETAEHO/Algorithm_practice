@@ -9,4 +9,4 @@
   - [알고리즘](https://github.com/TAETAEHO/TIL/tree/main/Algorithm)
 
 - 프로젝트
-  - [MunjiOut](https://github.com/TAETAEHO/TIL/blob/main/Project/note.md)
+  - [MunjiOut (Codestates First Project)](https://github.com/TAETAEHO/TIL/blob/main/Project/note.md)
