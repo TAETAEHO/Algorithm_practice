@@ -28,7 +28,7 @@
     - [MunjiOut (Codestates First Project)](https://github.com/TAETAEHO/TIL/blob/main/Project/note.md)
     - [M4M (Codestates Final Project)](https://github.com/codestates/M4M)
 
-      <details>
+        <details>
         <summary>2021.09.14</summary>
         
       - 특정문자열 선택
@@ -37,5 +37,14 @@
         - sequelize
           - 들어가는 값을 고유한 id값과 동일하게 맞추고 싶을 때
           - 테이블.findAll({order: [["createdAt", "DESC"]],});
+
+        </details>
+        
+        <details>
+          <summary>2021.09.15</summary>
+
+          - csv 파일 mysql에 insert 하는 방법
+            - load data local infile '파일명'\n into table 테이블명\n fields terminated by ','
+            - (https://calen.tistory.com/49)
 
         </details>
