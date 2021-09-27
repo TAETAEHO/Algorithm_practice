@@ -48,3 +48,13 @@
             - (https://calen.tistory.com/49)
 
         </details>
+
+        <details>
+          <summary>2021.09.27</summary>
+
+          - git pull 취소
+            - git reset --hard ORIG_HEAD
+          - 해당되는 모든 occurence 변경
+            - .replace(/[해당되는 것]/g, '변경하고자 하는 것')
+
+        </details>
