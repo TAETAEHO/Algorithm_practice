@@ -58,3 +58,11 @@
             - .replace(/[해당되는 것]/g, '변경하고자 하는 것')
 
         </details>
+
+        <details>
+          <summary>2021.09.28</summary>
+
+          - git fetch <shortname> <branchname>
+            - Remote Repository에 branch 내용을 Local Repository에 가져온다. (자동병합 x)
+
+        </details>
