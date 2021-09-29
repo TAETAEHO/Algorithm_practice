@@ -66,3 +66,11 @@
             - Remote Repository에 branch 내용을 Local Repository에 가져온다. (자동병합 x)
 
         </details>
+
+        <details>
+          <summary>2021.09.29</summary>
+
+          - A cross-origin error was thrown. React doesn't have access ~ 에러
+            - JSON.parse()로 데이터를 받아오면 JSON.stringify() 해줘야한다
+
+        </details>
