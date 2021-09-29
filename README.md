@@ -72,5 +72,7 @@
 
           - A cross-origin error was thrown. React doesn't have access ~ 에러
             - JSON.parse()로 데이터를 받아오면 JSON.stringify() 해줘야한다
+          - arr.flat()과 같은 개념
+            - arr.reduce((acc, val) => acc.concat(val), []);
 
         </details>
