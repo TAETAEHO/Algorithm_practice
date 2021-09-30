@@ -80,7 +80,7 @@
         <details>
           <summary>2021.09.30</summary>
 
-          - AWS cloudfront 새로고침 시 accessDenied 에러 해결
+          - AWS cloudfront 새로고침 시 accessDenied 에러 해결(React-Route-Dom을 사용한 경우 발생하는 에러)
             - https://stackoverflow.com/questions/50299204/receive-accessdenied-when-trying-to-access-a-reload-or-refresh-or-one-in-new-tab
 
         </details>
