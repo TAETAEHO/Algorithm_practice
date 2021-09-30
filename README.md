@@ -84,3 +84,12 @@
             - https://stackoverflow.com/questions/50299204/receive-accessdenied-when-trying-to-access-a-reload-or-refresh-or-one-in-new-tab
 
         </details>
+
+        <details>
+          <summary>2021.10.1</summary>
+
+          - AWS CloudFront를 사용하여 배포 자동화를 진행할 경우 수정사항이 적용되지 않은 문제
+            - CloudFront의 캐시 정책을 수정한다
+              - S3 권장 옵션(CachingOptimized)를 사용하게 되면 24시간이 지나야 수정사항이 반영된다. 이를 disabled로 설정하면 바로 적용된다.
+
+        </details>
