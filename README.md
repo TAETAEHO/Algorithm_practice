@@ -91,5 +91,9 @@
           - AWS CloudFront를 사용하여 배포 자동화를 진행할 경우 수정사항이 적용되지 않은 문제
             - CloudFront의 캐시 정책을 수정한다
               - S3 권장 옵션(CachingOptimized)를 사용하게 되면 24시간이 지나야 수정사항이 반영된다. 이를 disabled로 설정하면 바로 적용된다.
+          - Nodemailer
+            - 이메일을 보내기 위한 모듈
+          - ejs
+            - 이메일 폼을 만들기 위한 모듈
 
         </details>
