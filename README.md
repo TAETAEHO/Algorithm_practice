@@ -81,7 +81,7 @@
           <summary>2021.09.30</summary>
 
           - AWS cloudfront 새로고침 시 accessDenied 에러 해결(React-Route-Dom을 사용한 경우 발생하는 에러)
-            - https://stackoverflow.com/questions/50299204/receive-accessdenied-when-trying-to-access-a-reload-or-refresh-or-one-in-new-tab
+            - 참고자료 : https://stackoverflow.com/questions/50299204/receive-accessdenied-when-trying-to-access-a-reload-or-refresh-or-one-in-new-tab
 
         </details>
 
@@ -93,7 +93,9 @@
               - S3 권장 옵션(CachingOptimized)를 사용하게 되면 24시간이 지나야 수정사항이 반영된다. 이를 disabled로 설정하면 바로 적용된다.
           - Nodemailer
             - 이메일을 보내기 위한 모듈
+            - 참고자료 : https://bb-library.tistory.com/106
           - ejs
             - 이메일 폼을 만들기 위한 모듈
+            - 참고자료 : https://bb-library.tistory.com/106
 
         </details>
