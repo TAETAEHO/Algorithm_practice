@@ -99,3 +99,11 @@
             - 참고자료 : https://bb-library.tistory.com/106
 
         </details>
+
+        <details>
+          <summary>2021.10.2</summary>
+
+          - HTTPS 적용
+            - 커스텀 도메인을 이요하는 경우 S3, EC2 모두 커스텀 도메인으로 연결해줘야한다.
+
+        </details>
