@@ -107,3 +107,11 @@
             - 커스텀 도메인을 이요하는 경우 S3, EC2 모두 커스텀 도메인으로 연결해줘야한다.
 
         </details>
+
+        <details>
+          <summary>2021.10.6</summary>
+
+          - window.location.replace('경로')
+            - 기존 페이지를 새로운 페이지로 변경시킨다. (새로고침)
+
+        </details>
