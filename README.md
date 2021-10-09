@@ -115,3 +115,11 @@
             - 기존 페이지를 새로운 페이지로 변경시킨다. (새로고침)
 
         </details>
+
+        <details>
+          <summary>2021.10.9</summary>
+
+          - Node mailer를 통해 메일 전송 구현 시 메일이 2번 가는 현상
+            - mail option이라는 변수를 만들어서 sendMail 메서드에 담아 보냈다.
+
+        </details>
