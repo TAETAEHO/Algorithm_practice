@@ -123,3 +123,11 @@
             - mail option이라는 변수를 만들어서 sendMail 메서드에 담아 보냈다.
 
         </details>
+
+        <details>
+          <summary>2021.10.10</summary>
+
+          - arr.flat()과 같은 개념
+            - const flattened = arr => [].concat(...arr);
+
+        </details>
