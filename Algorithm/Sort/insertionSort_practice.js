@@ -22,7 +22,7 @@ let insertionSort = (arr) => {
       left--;
     }
   }
-  // 정렬 된 arr 리턴
+
   return arr;
 };
 
