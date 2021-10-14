@@ -131,3 +131,15 @@
             - const flattened = arr => [].concat(...arr);
 
         </details>
+
+    - 기타
+
+        <details>
+          <summary>2021.10.14</summary>
+
+      - raw query vs orm
+        - orm은 query를 작성하지 않아도 데이터 추가 / 삭제 / 수정가능
+        - 특정 DB에 한정되지 않기 떄문에 migration이 자유롭다
+        - 성능을 요구하는 raw query가 필요하지 않은 경우 orm을 사용하는게 좋다(사견)
+
+        </details>
