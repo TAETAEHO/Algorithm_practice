@@ -138,8 +138,20 @@
           <summary>2021.10.14</summary>
 
       - raw query vs orm
+
         - orm은 query를 작성하지 않아도 데이터 추가 / 삭제 / 수정가능
         - 특정 DB에 한정되지 않기 떄문에 migration이 자유롭다
         - 성능을 요구하는 raw query가 필요하지 않은 경우 orm을 사용하는게 좋다(사견)
+
+        </details>
+
+        <details>
+          <summary>2021.10.14</summary>
+
+        - cors란 무엇이고 Node.js기반 웹 서비스에서 어떻게 설정하는지
+          - same origin이 아닌 cross origin에 대해서 리소스를 요청하는 것.
+          - spa, 고도화 어플리케이션 등장으로 서버 뿐만 아니라 여러 곳의 리소스를 활용하기 위한 목적
+          - 응답헤더에 Access-Control-Allow-Origin을 사용하여 허용하고자 하는 도메인 또는 포트를 추가할 수 있다. \*를 사용하여 전체 도메인에 대해 허용할 수 있다.
+          - cors 확장 라이브러리를 사용해서 설정할 수 있다.
 
         </details>
