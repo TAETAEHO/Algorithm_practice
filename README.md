@@ -8,7 +8,7 @@
 
   - [알고리즘](https://github.com/TAETAEHO/TIL/tree/main/Algorithm)
     <details>
-      <summary>2021.09.10</summary>
+      <summary>2021.09.10 : sort()</summary>
 
     - sort((a, b) => a-b)
       - 반환값이 0보다 작으면 a를 b보다 앞에 위치시킨다.
@@ -16,7 +16,7 @@
     </details>
 
     <details>
-      <summary>2021.09.11</summary>
+      <summary>2021.09.11 : robotPath</summary>
 
     - robotPath
       - Y좌표 = DIR[i][0], X좌표 = DIR[i][1]
@@ -29,7 +29,7 @@
     - [M4M (Codestates Final Project)](https://github.com/codestates/M4M)
 
         <details>
-        <summary>2021.09.14</summary>
+        <summary>2021.09.14 : 특정 문자열 선택</summary>
         
       - 특정문자열 선택
         - 전체선택 : ctrl + shift + l
@@ -41,7 +41,7 @@
         </details>
         
         <details>
-          <summary>2021.09.15</summary>
+          <summary>2021.09.15 : csv파일 bulk insert</summary>
 
           - csv 파일 mysql에 insert 하는 방법
             - load data local infile '파일명'\n into table 테이블명\n fields terminated by ','
@@ -50,7 +50,7 @@
         </details>
 
         <details>
-          <summary>2021.09.27</summary>
+          <summary>2021.09.27 : git pull 취소</summary>
 
           - git pull 취소
             - git reset --hard ORIG_HEAD
@@ -60,7 +60,7 @@
         </details>
 
         <details>
-          <summary>2021.09.28</summary>
+          <summary>2021.09.28 : git fetch</summary>
 
           - git fetch <shortname> <branchname>
             - Remote Repository에 branch 내용을 Local Repository에 가져온다. (자동병합 x)
@@ -68,7 +68,7 @@
         </details>
 
         <details>
-          <summary>2021.09.29</summary>
+          <summary>2021.09.29 : 배포환경에서 flat() 에러 핸들링</summary>
 
           - A cross-origin error was thrown. React doesn't have access ~ 에러
             - JSON.parse()로 데이터를 받아오면 JSON.stringify() 해줘야한다
@@ -78,7 +78,7 @@
         </details>
 
         <details>
-          <summary>2021.09.30</summary>
+          <summary>2021.09.30 : cloudfront accessdenied 에러 핸들링</summary>
 
           - AWS cloudfront 새로고침 시 accessDenied 에러 해결(React-Route-Dom을 사용한 경우 발생하는 에러)
             - 참고자료 : https://stackoverflow.com/questions/50299204/receive-accessdenied-when-trying-to-access-a-reload-or-refresh-or-one-in-new-tab
@@ -86,7 +86,7 @@
         </details>
 
         <details>
-          <summary>2021.10.1</summary>
+          <summary>2021.10.1 : cloudfront 배포 자동화 에러 핸들링</summary>
 
           - AWS CloudFront를 사용하여 배포 자동화를 진행할 경우 수정사항이 적용되지 않은 문제
             - CloudFront의 캐시 정책을 수정한다
@@ -101,15 +101,15 @@
         </details>
 
         <details>
-          <summary>2021.10.2</summary>
+          <summary>2021.10.2 : HTTPS 적용</summary>
 
           - HTTPS 적용
-            - 커스텀 도메인을 이요하는 경우 S3, EC2 모두 커스텀 도메인으로 연결해줘야한다.
+            - 커스텀 도메인을 이용하는 경우 S3, EC2 모두 커스텀 도메인으로 연결해줘야한다.
 
         </details>
 
         <details>
-          <summary>2021.10.6</summary>
+          <summary>2021.10.6 : window.location.replace</summary>
 
           - window.location.replace('경로')
             - 기존 페이지를 새로운 페이지로 변경시킨다. (새로고침)
@@ -117,7 +117,7 @@
         </details>
 
         <details>
-          <summary>2021.10.9</summary>
+          <summary>2021.10.9 : node mailer 에러 핸들링</summary>
 
           - Node mailer를 통해 메일 전송 구현 시 메일이 2번 가는 현상
             - mail option이라는 변수를 만들어서 sendMail 메서드에 담아 보냈다.
@@ -125,7 +125,7 @@
         </details>
 
         <details>
-          <summary>2021.10.10</summary>
+          <summary>2021.10.10 : flat() -> reduce</summary>
 
           - arr.flat()과 같은 개념
             - const flattened = arr => [].concat(...arr);
@@ -135,7 +135,7 @@
     - 기타
 
         <details>
-          <summary>2021.10.14</summary>
+          <summary>2021.10.14 : raw query vs orm</summary>
 
       - raw query vs orm
 
@@ -146,7 +146,7 @@
         </details>
 
         <details>
-          <summary>2021.10.16</summary>
+          <summary>2021.10.16 : cors란, node.js기반 웹 서비스에서 설정 방법</summary>
 
         - cors란 무엇이고 Node.js기반 웹 서비스에서 어떻게 설정하는지
           - same origin이 아닌 cross origin에 대해서 리소스를 요청하는 것.
@@ -157,7 +157,7 @@
         </details>
 
         <details>
-          <summary>2021.10.17</summary>
+          <summary>2021.10.1 : node.js에서 비동기의 개념</summary>
 
         - Node.js에서 비동기의 개념
           - node는 비동기 IO를 지원하며 Single Thread 기반으로 동작하는 서버이다.
