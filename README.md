@@ -214,3 +214,15 @@
           - 스크럼 : Sprint 중심, 매일 정해진 장소 정해진 시간에 팀 단위 개발
 
         </details>
+
+        <details>
+          <summary>2021.10.22 : sequelize.define</summary>
+
+        - const users = sequelize.define('user', {
+          name : {
+          type : DataTypes.STRING,
+          allowNull : false
+          }
+          }, {timestamps : false})
+
+        </details>
