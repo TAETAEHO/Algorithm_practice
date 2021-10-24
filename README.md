@@ -254,7 +254,7 @@
         </details>
 
         <details>
-          <summary>2021.10.26 : tsconfig.json</summary>
+          <summary>2021.10.24 : tsconfig.json</summary>
 
         - npm install -D typescript nodemon ts-node
         - npx tsc -init
