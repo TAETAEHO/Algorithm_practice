@@ -216,7 +216,7 @@
         </details>
 
         <details>
-          <summary>2021.10.22 : sequelize.define</summary>
+          <summary>2021.10.23 : sequelize.define</summary>
 
         - const users = sequelize.define('user', {
           name : {
@@ -224,5 +224,13 @@
           allowNull : false
           }
           }, {timestamps : false})
+
+        </details>
+
+        <details>
+          <summary>2021.10.26 : tsconfig.json</summary>
+
+        - npm install -D typescript nodemon ts-node
+        - npx tsc -init
 
         </details>
