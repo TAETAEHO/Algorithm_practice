@@ -132,6 +132,29 @@
 
         </details>
 
+      - [Ha_Za (with TypeScript, Prisma, Graphql)](https://github.com/Ha-Za/Ha-Za)
+
+        <details>
+          <summary>2021.10.27 : prisma 세팅(관계 설정, migrate)</summary>
+
+        - 참고자료
+          - migrate : https://www.prisma.io/docs/concepts/components/prisma-migrate
+          - 관계 설정(one to one, one to many) : https://www.prisma.io/docs/concepts/components/prisma-schema/relations
+            - one to one : ex) Post?
+            - one to many : ex) Post[]
+          - prisma 설치 및 node.js와 연동 : https://velog.io/@jinybear/TIL-4.-prisma-%EC%84%A4%EC%B9%98-%EB%B0%8F-node.js%EC%99%80-%EC%97%B0%EB%8F%99
+
+        </details>
+
+        <details>
+          <summary>2021.10.27 : mysql 비밀번호 변경(특수문자로 인한 migrate 문제)</summary>
+
+        - 참고자료
+          - https://velog.io/@michael00987/MYSQL-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%ED%99%95%EC%9D%B8-%EB%B0%8F-%EB%B3%80%EA%B2%BD
+        - prisma migrate를 할때 vscode에서 프리티어 익스텐션을 사용할 경우 특수문자 앞에 \가 자동생성 되는데 이로인해 migrate가 안된다. 따라서 특수문자가 없는 비밀번호로 mysql 비밀번호를 변경하였다.
+
+        </details>
+
     - 기타
 
         <details>
