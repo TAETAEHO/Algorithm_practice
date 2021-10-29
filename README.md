@@ -164,6 +164,7 @@
         - ex) id : ID! -> !(느낌표)는 필수라는 뜻
           - https://v1.prisma.io/docs/1.34/datamodel-and-migrations
         - 참고자료(회원가입 구현) : https://goo-eungs.tistory.com/34?category=882310
+          - prisma-client 모듈 : prima.create 등으로 테이블에 데이터 생성 및 조회 삭제 가능
         - resolver 인자 : (parent, args, context, info)
 
         </details>
