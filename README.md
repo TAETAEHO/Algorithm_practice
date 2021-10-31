@@ -147,18 +147,6 @@
         </details>
 
         <details>
-          <summary>2021.10.27 : prisma 세팅(관계 설정, migrate)</summary>
-
-        - 참고자료
-          - migrate : https://www.prisma.io/docs/concepts/components/prisma-migrate
-          - 관계 설정(one to one, one to many) : https://www.prisma.io/docs/concepts/components/prisma-schema/relations
-            - one to one : ex) Post?
-            - one to many : ex) Post[]
-          - prisma 설치 및 node.js와 연동 : https://velog.io/@jinybear/TIL-4.-prisma-%EC%84%A4%EC%B9%98-%EB%B0%8F-node.js%EC%99%80-%EC%97%B0%EB%8F%99
-
-        </details>
-
-        <details>
           <summary>2021.10.28 : schema.prisma, React/Graphql/Prisma로 회원가입 구현, Graphql resolver</summary>
 
         - ex) id : ID! -> !(느낌표)는 필수라는 뜻
