@@ -260,3 +260,13 @@
         - npx tsc -init
 
         </details>
+
+        <details>
+          <summary>2021.11.2 : react-addons-update</summary>
+
+        - npm install react-addons-update
+        - 참고자료 : https://velopert.com/1015
+          - 원소 제거하기 : $splice
+          - 원소 수정하기 : $set
+
+        </details>
