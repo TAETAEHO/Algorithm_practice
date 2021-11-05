@@ -277,3 +277,11 @@
         - toISOString() 메서드는 단순화한 확장 ISO 형식(ISO 8601)의 문자열을 반환
 
         </details>
+
+        <details>
+          <summary>2021.11.5 : Spread syntax</summary>
+
+        - ex -> return {...obj, something}
+          - something이 이미 있을 경우 대체해줌
+
+        </details>
