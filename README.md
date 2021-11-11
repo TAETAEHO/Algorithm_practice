@@ -292,3 +292,11 @@
         - 참고자료 : https://dailytaeho.tistory.com/6
 
         </details>
+
+        <details>
+          <summary>2021.11.9 : toLocaleString</summary>
+
+        - 배열의 요소를 나타내는 문자열을 반환
+        - 참고자료 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString
+
+        </details>
