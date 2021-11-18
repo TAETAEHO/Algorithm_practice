@@ -300,3 +300,10 @@
         - 참고자료 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString
 
         </details>
+
+        <details>
+          <summary>2021.11.18 : Redux</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/7
+
+        </details>
