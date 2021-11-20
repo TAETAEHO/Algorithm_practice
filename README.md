@@ -307,3 +307,10 @@
         - 참고자료 : https://dailytaeho.tistory.com/7
 
         </details>
+
+        <details>
+          <summary>2021.11.20 : Java - abstract, interface</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/9
+
+        </details>
