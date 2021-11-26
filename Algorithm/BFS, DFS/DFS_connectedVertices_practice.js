@@ -52,11 +52,11 @@ let dfs = (matrix, flag, from) => {
   }
 };
 
-// console.log(
-//   connectedVertices([
-//     [0, 1],
-//     [2, 3],
-//     [3, 4],
-//     [3, 5],
-//   ])
-// );
+console.log(
+  connectedVertices([
+    [0, 1],
+    [2, 3],
+    [3, 4],
+    [3, 5],
+  ])
+);
