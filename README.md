@@ -158,7 +158,7 @@
 
         </details>
 
-    - [타입스크립트](https://github.com/TAETAEHO/TIL/tree/main/Type%20Script)
+    - [타입스크립트](https://github.com/TAETAEHO/TIL/tree/main/TypeScript)
 
     - 기타
 
