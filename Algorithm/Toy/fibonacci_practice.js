@@ -5,9 +5,7 @@
 // Solution 1. 재귀함수를 이용한 피보나치 수열
 function fibonacci(num) {
   // num이 2보다 작으면 num을 리턴한다. -> 피보나치 0번째 수는 0, 1번째 수는 1
-  if (num < 2) {
-    return num;
-  }
+  if (num < 2) return num;
 
   // f(n) = f(n-1) + f(n-2)
   return fibonacci(num - 1) + fibonacci(num - 2);
@@ -16,9 +14,7 @@ function fibonacci(num) {
 // Solution 2. for문을 이용한 피보나치 수열
 function fibonacci(num) {
   // num이 0이면 0을 리턴한다.
-  if (num === 0) {
-    return 0;
-  }
+  if (num === 0) return 0;
 
   // 초기값 설정 f(n) = f(n-1) + f(n-2)
   let preNum = 0;

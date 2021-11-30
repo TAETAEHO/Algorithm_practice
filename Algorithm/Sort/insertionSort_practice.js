@@ -51,7 +51,6 @@ let insertionSort = (arr) => {
 
 // Solution 3. -> callback.
 let insertionSort = (arr, callback = (item) => item) => {
-  // arr을 탐색한다.
   // 삽입정렬은 해당 인덱스와 왼쪽에 있는 인덱스를 비교하기 때문에 i는 1부터 시작한다.
   for (let i = 1; i < arr.length; i++) {
     // 현재 인덱스의 요소를 가리키는 변수 생성
@@ -68,6 +67,6 @@ let insertionSort = (arr, callback = (item) => item) => {
     // while문을 타게 되면 left는 항상 -1이 되어서 빠져나오기 때문에 arr[left + 1]은 arr[0]이 된다.
     arr[left + 1] = curEl;
   }
-  // 정렬 된 arr 리턴
+
   return arr;
 };

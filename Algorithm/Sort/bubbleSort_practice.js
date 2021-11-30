@@ -15,7 +15,6 @@ function bubbleSort(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; i < arr.length; j++) {
-      // arr[i]가 arr[j]보다 크면 자리를 바꿔준다.
       if (arr[i] > arr[j]) {
         tmp = arr[j];
         arr[i] = arr[j];
@@ -23,7 +22,7 @@ function bubbleSort(arr) {
       }
     }
   }
-  // arr리턴한다.
+
   return arr;
 }
 
@@ -32,10 +31,8 @@ function bubbleSort(arr) {
   let tmp = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    // 정렬이 일어난 경우 카운트해줄 변수 선언
     let cnt = 0;
     for (let j = 0; j < arr.length; j++) {
-      // arr[j]가 arr[j+1]보다 크면 자리를 바꿔준다.
       if (arr[j] > arr[j + 1]) {
         // 정렬이 일어났으므로 cnt 하나 증가
         cnt++;
@@ -49,6 +46,6 @@ function bubbleSort(arr) {
       return arr;
     }
   }
-  // arr리턴한다.
+
   return arr;
 }

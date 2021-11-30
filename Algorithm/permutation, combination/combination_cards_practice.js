@@ -79,7 +79,6 @@ function blackJack(cards) {
   for (let i = 0; i < cards.length; i++) {
     for (let j = i + 1; j < cards.length; j++) {
       for (let k = j + 1; k < cards.length; k++) {
-        // i, j, k번째 요소를 더해서 소수이면 카운트 증가시켜준다.
         // 최종적으로 소수의 개수만 리턴하면 문제해결
         if (isPrime(cards[i] + cards[j] + cards[k])) {
           cnt++;
@@ -93,13 +92,11 @@ function blackJack(cards) {
 
 // 소수를 판별하기 위한 함수
 const isPrime = (num) => {
-  // 2는 소수다
   if (num === 2) {
     return true;
   }
 
   for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
-    // 나누어 떨어지는 경우는 소수가 아니다
     if (num % i === 0) {
       return false;
     }
