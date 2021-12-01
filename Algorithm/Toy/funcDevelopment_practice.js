@@ -31,8 +31,8 @@ function funcDevelopment(processes, speeds) {
     } else {
       // 있는 경우 maxNumIdx를 result에 집어넣고 그만큼 자르기
       result.push(maxNumIdx);
+      // slice() -> immutable
       publishDay.splice(0, maxNumIdx);
-      // publishDay = publishDay.slice(maxNumIdx); -> 이건 splice랑 결과값이 똑같은데 테스트는 통과 왜 안되는지 모르겠다.
     }
   }
   return result;
