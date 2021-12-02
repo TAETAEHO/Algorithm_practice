@@ -15,23 +15,11 @@ function rangeMinimum(arr, ranges) {
     let min = Number.MAX_SAFE_INTEGER;
 
     for (let i = start; i <= end; i++) {
-      if (min > arr[i]) {
-        min = arr[i];
-      }
+      if (min > arr[i]) min = arr[i];
     }
     return min;
   });
 }
-
-console.log(
-  rangeMinimum(
-    [1, 3, 2, 7, 9, 11],
-    [
-      [1, 4],
-      [0, 3],
-    ]
-  )
-);
 
 // Solution 2. -> 이중포문으로 구현
 function rangeMinimum(arr, ranges) {
@@ -42,9 +30,7 @@ function rangeMinimum(arr, ranges) {
     let min = Number.MAX_SAFE_INTEGER;
 
     for (let j = start; j <= end; j++) {
-      if (min > arr[j]) {
-        min = arr[j];
-      }
+      if (min > arr[j]) min = arr[j];
     }
 
     result.push(min);
