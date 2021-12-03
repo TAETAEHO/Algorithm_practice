@@ -28,17 +28,7 @@ function isSubsetOf(a, b) {
 
 // Solution 2. every 메서드 사용
 function isSubsetOf(a, b) {
-  /*
-    return b.every(el => b.includes(el));
-    */
-
-  return b.every((el) => {
-    if (a.includes(el)) {
-      return true;
-    } else {
-      return false;
-    }
-  });
+  return b.every((el) => b.includes(el));
 }
 
 // Solution 3. 오름차순으로 소팅 후 비교
