@@ -344,3 +344,10 @@
         - 참고자료 : https://dailytaeho.tistory.com/14
 
         </details>
+
+        <details>
+          <summary>2021.12.05 : Bitbucket에서 git clone하기(app password)</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/15
+
+        </details>
