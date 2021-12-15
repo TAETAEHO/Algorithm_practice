@@ -351,3 +351,10 @@
         - 참고자료 : https://dailytaeho.tistory.com/15
 
         </details>
+
+        <details>
+          <summary>2021.12.15 : MySQL NULL 처리</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/16
+
+        </details>
