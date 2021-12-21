@@ -371,3 +371,23 @@
           - 현재 어떤 함수가 실행되고 있는지, 함수내에 어떤 함수가 동작하고 있는지 등을 제어한다.
 
         </details>
+
+        <details>
+          <summary>2021.12.21 : react-csv</summary>
+
+        - csv파일로 내려받을 수 있는 모듈
+        - ```js
+          import { CSVLink } from "react-csv";
+
+          <CSVLink
+            header={header}
+            data={data}
+            filename={"file.csv"}
+            className="btn btn-primary"
+            target="_blank"
+          >
+            csv파일 내려받기
+          </CSVLink>;
+          ```
+
+        </details>
