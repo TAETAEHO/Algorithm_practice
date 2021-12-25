@@ -391,3 +391,11 @@
           ```
 
         </details>
+
+        <details>
+          <summary>2021.12.25 : rest api PUT vs PATCH</summary>
+
+        - PUT : 요청 시에 변경되지 않는 데이터가 같이 보낸다. 보내지 않은 데이터는 null 처리
+        - PATCH : 요청 시에 변경되지 않는 데이터를 보내지 않아도 null 처리 되지 않는다. 변경할 데이터만 변경하고 나머지 데이터 값들은 유지된다.
+
+        </details>
