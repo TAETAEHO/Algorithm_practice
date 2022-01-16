@@ -399,3 +399,10 @@
         - PATCH : 요청 시에 변경되지 않는 데이터를 보내지 않아도 null 처리 되지 않는다. 변경할 데이터만 변경하고 나머지 데이터 값들은 유지된다.
 
         </details>
+
+        <details>
+          <summary>2022.01.16 : HTML Tag (datalist, picture, progress, meter)</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/17
+
+        </details>
