@@ -406,3 +406,15 @@
         - 참고자료 : https://dailytaeho.tistory.com/17
 
         </details>
+
+        <details>
+          <summary>2022.02.01 : Restful API 특징</summary>
+
+        - 클라이언트와 서버가 분리되어야한다.
+        - stateless
+          - Token 등 3자 인증방식으로 session을 사용하지 않는다.
+        - cashable
+        - 계층적 구조로 구성되어야한다.
+          - 클라이언트 -> 컨트롤러 -> 서비스 -> 레파지토리 -> DB
+
+        </details>
