@@ -162,6 +162,8 @@
 
     - 기타
 
+      <details>
+          <summary>2021 학습</summary>
         <details>
           <summary>2021.10.14 : raw query vs orm</summary>
 
@@ -399,22 +401,26 @@
         - PATCH : 요청 시에 변경되지 않는 데이터를 보내지 않아도 null 처리 되지 않는다. 변경할 데이터만 변경하고 나머지 데이터 값들은 유지된다.
 
         </details>
+        </details>
 
+      <details>
+        <summary>2022 학습</summary>
         <details>
           <summary>2022.01.16 : HTML Tag (datalist, picture, progress, meter)</summary>
 
-        - 참고자료 : https://dailytaeho.tistory.com/17
+      - 참고자료 : https://dailytaeho.tistory.com/17
 
         </details>
 
         <details>
-          <summary>2022.02.01 : Restful API 특징</summary>
+          <summary>2022.02.01 : Restful API 원리원칙</summary>
 
         - 클라이언트와 서버가 분리되어야한다.
         - stateless
           - Token 등 3자 인증방식으로 session을 사용하지 않는다.
         - cashable
         - 계층적 구조로 구성되어야한다.
+
           - 클라이언트 -> 컨트롤러 -> 서비스 -> 레파지토리 -> DB
 
         </details>
@@ -427,6 +433,7 @@
           - 하나의 큰 어플리케이션을 만들기 위해 여러개의 어플리케이션으로 잘게 쪼개서 합치는 방식
 
         - 트랜잭션이란?
+
           - DB 결과에 영향을 줄 수 있는 작업의 단위
           - 원자성(Atomicity)
             - 트랜잭션이 DB에 모두 반영되던지 아니면 모두 반영 안되던지
@@ -437,4 +444,12 @@
           - 지속성(Durability)
             - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
 
+          </details>
+
+          <details>
+          <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블 변경하기</summary>
+
+            - 참고자료 : https://dailytaeho.tistory.com/20
+
+          </details>
         </details>
