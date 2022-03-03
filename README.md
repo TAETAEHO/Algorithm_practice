@@ -444,12 +444,20 @@
           - 지속성(Durability)
             - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
 
+            </details>
+
+            <details>
+            <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블 변경하기</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/20
+
+            </details>
+            <details>
+            <summary>2022.03.03 : Intellij 단축키</summary>
+
+              - generate something : command + n
+              - 클래스, 패키지 등 생성 : command + 1 -> command + n
+              - 편집기로 이동 : ESC
+
+            </details>
           </details>
-
-          <details>
-          <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블 변경하기</summary>
-
-            - 참고자료 : https://dailytaeho.tistory.com/20
-
-          </details>
-        </details>
