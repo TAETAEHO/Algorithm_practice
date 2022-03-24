@@ -410,10 +410,10 @@
 
       - 참고자료 : https://dailytaeho.tistory.com/17
 
-        </details>
+          </details>
 
-        <details>
-          <summary>2022.02.01 : Restful API 원리원칙</summary>
+          <details>
+            <summary>2022.02.01 : Restful API 원리원칙</summary>
 
         - 클라이언트와 서버가 분리되어야한다.
         - stateless
@@ -423,50 +423,59 @@
 
           - 클라이언트 -> 컨트롤러 -> 서비스 -> 레파지토리 -> DB
 
-        </details>
-
-        <details>
-          <summary>2022.02.02 : 트랜잭션, MSA</summary>
-
-        - MSA란?? (Microservice Architecture)
-
-          - 하나의 큰 어플리케이션을 만들기 위해 여러개의 어플리케이션으로 잘게 쪼개서 합치는 방식
-
-        - 트랜잭션이란?
-
-          - DB 결과에 영향을 줄 수 있는 작업의 단위
-          - 원자성(Atomicity)
-            - 트랜잭션이 DB에 모두 반영되던지 아니면 모두 반영 안되던지
-          - 일관성(Consistency)
-            - 도중에 DB가 업데이트 되어도 트랜잭션의 처리 결과가 달라져서는 안된다.
-          - 독립성(Isolation)
-            - 하나의 트랜잭션의 처리 결과가 다른 트랜잭션의 처리 결과에 영향을 줘서는 안된다.
-          - 지속성(Durability)
-
-            - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
-
-              </details>
-
-              <details>
-              <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블 변경하기</summary>
-
-                - 참고자료 : https://dailytaeho.tistory.com/20
-
-              </details>
-              <details>
-              <summary>2022.03.03 : Intellij 단축키</summary>
-
-                - generate something : command + n
-                - 클래스, 패키지 등 생성 : command + 1 -> command + n
-                - 편집기로 이동 : ESC
-
-              </details>
-              <details>
-              <summary>2022.03.03 : Intellij 단축키</summary>
-
-                - generate something : command + n
-                - 클래스, 패키지 등 생성 : command + 1 -> command + n
-                - 편집기로 이동 : ESC
-
-              </details>
             </details>
+
+              <details>
+                <summary>2022.02.02 : 트랜잭션, MSA</summary>
+
+            - MSA란?? (Microservice Architecture)
+
+              - 하나의 큰 어플리케이션을 만들기 위해 여러개의 어플리케이션으로 잘게 쪼개서 합치는 방식
+
+            - 트랜잭션이란?
+
+              - DB 결과에 영향을 줄 수 있는 작업의 단위
+              - 원자성(Atomicity)
+                - 트랜잭션이 DB에 모두 반영되던지 아니면 모두 반영 안되던지
+              - 일관성(Consistency)
+                - 도중에 DB가 업데이트 되어도 트랜잭션의 처리 결과가 달라져서는 안된다.
+              - 독립성(Isolation)
+                - 하나의 트랜잭션의 처리 결과가 다른 트랜잭션의 처리 결과에 영향을 줘서는 안된다.
+              - 지속성(Durability)
+
+                - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
+
+            </details>
+
+              <details>
+                <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블변경하기</summary>
+
+            - 참고자료 : https://dailytaeho.tistory.com/20
+
+              </details>
+
+                <details>
+                  <summary>2022.03.03 : Intellij 단축키</summary>
+
+              - generate something : command + n
+              - 클래스, 패키지 등 생성 : command + 1 -> command + n
+              - 편집기로 이동 : ESC
+
+                </details>
+
+                <details>
+                  <summary>2022.03.23 : 에러처리 동기 vs 비동기</summary>
+
+                - 동기 : try ~ catch문으로 에러 처리
+                - 비동기 : 콜백함수 내에서 에러처리 (try ~ catch문으로 잡아도 외부에서 확인이 불가능함)
+
+                </details>
+
+              <details>
+                <summary>2022.03.24 : express 유용한 내부, 외부 middleware</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/22
+
+              </details>
+
+          </details>
