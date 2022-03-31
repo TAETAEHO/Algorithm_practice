@@ -493,4 +493,16 @@
 
               </details>
 
+              <details>
+                <summary>2022.03.31 : SQL 최대값 행 한개 출력</summary>
+
+              ```sql
+                SELECT *
+                FROM TABLE
+                ORDER BY A DESC
+                LIMIT 0, 1;
+              ```
+
+              </details>
+
           </details>
