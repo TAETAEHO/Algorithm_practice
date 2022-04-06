@@ -505,4 +505,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.06 : mongodump, mongorestore</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/25
+
+              </details>
+
           </details>
