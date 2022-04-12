@@ -526,4 +526,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.12 : Azure 관련 용어</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/29
+
+              </details>
+
           </details>
