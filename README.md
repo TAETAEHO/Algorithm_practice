@@ -533,4 +533,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.13 : Azure Pipelines</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/30
+
+              </details>
+
           </details>
