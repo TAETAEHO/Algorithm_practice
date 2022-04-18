@@ -547,4 +547,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.18 : Mongoose Schema enum</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/32
+
+              </details>
+
           </details>
