@@ -554,4 +554,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.19 : Mongoose Schema 생성</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/33
+
+              </details>
+
           </details>
