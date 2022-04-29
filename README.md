@@ -568,4 +568,13 @@
 
               </details>
 
+              <details>
+                <summary>2022.04.29 : Azure Partner Center</summary>
+
+              - Partner Center
+                - MS와 Customer 사이의 비즈니스 프로세스를 관리
+                - 계정관리, 보안, 데이터 관리 등
+
+              </details>
+
           </details>
