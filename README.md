@@ -577,4 +577,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.05.02 : PowerShell에서 Azure 명령어 사용하기</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/35
+
+              </details>
+
           </details>
