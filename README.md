@@ -584,4 +584,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.05.03 : Graph API를 사용하기 위한 Token 발급</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/36
+
+              </details>
+
           </details>
