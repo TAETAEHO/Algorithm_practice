@@ -591,4 +591,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.05.09 : mongoose.Schema : default: () => []</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/37
+
+              </details>
+
           </details>
