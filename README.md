@@ -598,4 +598,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.05.10 : MongoDB Aggregation : $arrayElemAt, $ifNull</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/38
+
+              </details>
+
           </details>
