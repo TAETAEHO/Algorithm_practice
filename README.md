@@ -612,4 +612,11 @@
 
               </details>
 
+              <details>
+                <summary>2022.05.25 : Joi로 validation check</summary>
+
+              - 참고자료 : https://dailytaeho.tistory.com/40
+
+              </details>
+
           </details>
