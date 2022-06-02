@@ -12,47 +12,6 @@
  */
 
 // Solution
-// function reportedResult(id_list, report, k) {
-//   let withoutDupReport = [...new Set(report)]; // 중복 제거
-
-//   let reporterARR = [];
-//   let reporterOBJ = {};
-
-//   let reporteeCnt = 0;
-//   let reporteeARR = [];
-//   let reporteeOBJ = {};
-
-//   if (withoutDupReport.length < k) return [0, 0];
-
-//   for (let i = 0; i < withoutDupReport.length; i++) {
-//     let reporter = withoutDupReport[i].split(" ")[0];
-//     let reportee = withoutDupReport[i].split(" ")[1];
-
-//     reporteeOBJ = {
-//       [reportee]: reporteeCnt,
-//     };
-
-//     reporterOBJ = {
-//       [reporter]: reportee,
-//     };
-
-//     reporteeARR.push(reporteeOBJ);
-//     reporterARR.push(reporterOBJ);
-
-//     if (
-//       Object.keys(reporteeARR[i]).toString() ==
-//       Object.values(reporterARR[i]).toString()
-//     ) {
-//       // console.log("2222222222");
-//     }
-//   }
-
-//   console.log(reporterARR);
-//   console.log(reporteeARR);
-
-//   return withoutDupReport;
-// }
-
 function solution(id_list, report, k) {
   const result = new Array(id_list.length).fill(0);
   const reported_list = {};
@@ -62,10 +21,10 @@ function solution(id_list, report, k) {
   });
 
   report.map((user) => {
-    const [user_id, reported_id] = user.split(" ");
+    const [reporter_id, reportee_id] = user.split(" ");
 
-    if (!reported_list[reported_id].includes(user_id)) {
-      reported_list[reported_id].push(user_id);
+    if (!reported_list[reportee_id].includes(reporter_id)) {
+      reported_list[reportee_id].push(reporter_id);
     }
   });
 
@@ -76,6 +35,7 @@ function solution(id_list, report, k) {
       });
     }
   }
+
   return result;
 }
 
