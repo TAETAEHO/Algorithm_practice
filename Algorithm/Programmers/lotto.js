@@ -11,23 +11,56 @@
  */
 
 // Solution -> edge case 해결 못함
-function solution(lottos, win_nums) {
+// function solution(lottos, win_nums) {
+//   const result = [];
+
+//   lottos.sort((a, b) => a - b);
+//   win_nums.sort((a, b) => a - b);
+
+//   for (let i = 0; i < lottos.length; i++) {
+//     if (lottos[i] !== 0 && lottos[i] !== win_nums[i]) lottos.splice(i, 1);
+//     i++;
+//   }
+
+//   let filteredLottos = lottos.filter((val) => val !== 0);
+
+//   if (filteredLottos.length !== 0) {
+//     result.push(7 - lottos.length, 7 - filteredLottos.length);
+//   } else {
+//     result.push(7 - lottos.length, 6);
+//   }
+
+//   return result;
+// }
+
+function solution2(lottos, win_nums) {
+  const highestLank = [];
+  const lowestLank = [];
   const result = [];
 
   lottos.sort((a, b) => a - b);
   win_nums.sort((a, b) => a - b);
 
   for (let i = 0; i < lottos.length; i++) {
-    if (lottos[i] !== 0 && lottos[i] !== win_nums[i]) lottos.splice(i, 1);
-    i++;
+    if (lottos[i] === 0) {
+      highestLank.push(lottos[i]);
+      continue;
+    }
+
+    for (let j = 0; j < win_nums.length; j++) {
+      if (lottos[i] === win_nums[j]) {
+        highestLank.push(lottos[i]);
+        lowestLank.push(lottos[i]);
+      }
+    }
   }
 
-  let filteredLottos = lottos.filter((val) => val !== 0);
-
-  if (filteredLottos.length !== 0) {
-    result.push(7 - lottos.length, 7 - filteredLottos.length);
+  if (lowestLank.length !== 0) {
+    result.push(7 - highestLank.length, 7 - lowestLank.length);
+  } else if (highestLank.length === 0 && lowestLank.length === 0) {
+    result.push(6, 6);
   } else {
-    result.push(7 - lottos.length, 6);
+    result.push(7 - highestLank.length, 6);
   }
 
   return result;
