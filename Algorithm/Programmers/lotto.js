@@ -34,8 +34,8 @@
 // }
 
 function solution2(lottos, win_nums) {
-  const highestLank = [];
-  const lowestLank = [];
+  const highestRank = [];
+  const lowestRank = [];
   const result = [];
 
   lottos.sort((a, b) => a - b);
@@ -43,24 +43,24 @@ function solution2(lottos, win_nums) {
 
   for (let i = 0; i < lottos.length; i++) {
     if (lottos[i] === 0) {
-      highestLank.push(lottos[i]);
+      highestRank.push(lottos[i]);
       continue;
     }
 
     for (let j = 0; j < win_nums.length; j++) {
       if (lottos[i] === win_nums[j]) {
-        highestLank.push(lottos[i]);
-        lowestLank.push(lottos[i]);
+        highestRank.push(lottos[i]);
+        lowestRank.push(lottos[i]);
       }
     }
   }
 
-  if (lowestLank.length !== 0) {
-    result.push(7 - highestLank.length, 7 - lowestLank.length);
-  } else if (highestLank.length === 0 && lowestLank.length === 0) {
+  if (lowestRank.length !== 0) {
+    result.push(7 - highestRank.length, 7 - lowestRank.length);
+  } else if (highestRank.length === 0 && lowestRank.length === 0) {
     result.push(6, 6);
   } else {
-    result.push(7 - highestLank.length, 6);
+    result.push(7 - highestRank.length, 6);
   }
 
   return result;
