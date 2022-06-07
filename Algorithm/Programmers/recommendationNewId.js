@@ -29,20 +29,16 @@
 
 // Solution
 function solution(new_id) {
-  let lowercaseId = new_id.toLowerCase().split("");
+  const newId = new_id
+    .toLowerCase()
+    .replace(/[^\w\d-_.]/gi, "")
+    .replace(/[.]{2,}/gi, ".")
+    .replace(/^[.]|[.]$/gi, "")
+    .padEnd(1, "a")
+    .slice(0, 15)
+    .replace(/^\.|\.$/g, "");
 
-  if (lowercaseId.length >= 16) {
-    lowercaseId.slice(0, 15);
-  } else {
-  }
-
-  lowercaseId.filter((el) => {
-    console.log(el);
-    if (typeof el === "number" || el === "-") {
-      lowercaseId.splice(el, 2);
-    }
-    console.log(lowercaseId);
-  });
+  return newId.padEnd(3, newId[newId.length - 1]);
 }
 
 solution("z-+.^.");
