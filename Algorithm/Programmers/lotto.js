@@ -66,6 +66,18 @@ function solution2(lottos, win_nums) {
   return result;
 }
 
+function solution3(lottos, win_nums) {
+  // look-up table
+  const ranks = [6, 6, 5, 4, 3, 2, 1];
+
+  const minCount = lottos.filter((el) => win_nums.includes(el)).length;
+  const zeroCount = lottos.filter((el) => el === 0).length;
+
+  let maxCount = minCount + zeroCount;
+
+  return [ranks[maxCount], ranks[minCount]];
+}
+
 // solution([44, 1, 0, 0, 31, 25], [31, 10, 45, 1, 6, 19]);
 // solution([0, 0, 0, 0, 0, 0], [38, 19, 20, 40, 15, 25]);
-solution([45, 4, 35, 20, 3, 9], [20, 9, 3, 45, 4, 35]);
+solution2([45, 4, 35, 20, 3, 9], [20, 9, 3, 45, 4, 35]);
