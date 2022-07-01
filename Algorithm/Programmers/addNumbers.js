@@ -12,12 +12,15 @@ function solution(numbers) {
 
   for (let i = 0; i < numbers.length; i++) {
     for (let j = i + 1; j < numbers.length; i++) {
-      if (result.includes(sum)) continuel;
-
       sum = numbers[i] + numbers[j];
+
+      if (result.includes(sum)) continue;
       result.push(sum);
     }
   }
+  console.log(result);
+
+  return result;
 }
 
 solution([2, 1, 3, 4, 1]); // [2,3,4,5,6,7]
