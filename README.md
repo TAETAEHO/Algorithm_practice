@@ -403,227 +403,234 @@
         </details>
         </details>
 
-      <details>
-        <summary>2022 학습</summary>
         <details>
-          <summary>2022.01.16 : HTML Tag (datalist, picture, progress, meter)</summary>
-
-      - 참고자료 : https://dailytaeho.tistory.com/17
-
-          </details>
-
+          <summary>2022 학습</summary>
           <details>
-            <summary>2022.02.01 : Restful API 원리원칙</summary>
+            <summary>2022.01.16 : HTML Tag (datalist, picture, progress, meter)</summary>
 
-        - 클라이언트와 서버가 분리되어야한다.
-        - stateless
-          - Token 등 3자 인증방식으로 session을 사용하지 않는다.
-        - cashable
-        - 계층적 구조로 구성되어야한다.
-
-          - 클라이언트 -> 컨트롤러 -> 서비스 -> 레파지토리 -> DB
+        - 참고자료 : https://dailytaeho.tistory.com/17
 
             </details>
 
-              <details>
-                <summary>2022.02.02 : 트랜잭션, MSA</summary>
+            <details>
+              <summary>2022.02.01 : Restful API 원리원칙</summary>
 
-            - MSA란?? (Microservice Architecture)
+          - 클라이언트와 서버가 분리되어야한다.
+          - stateless
+            - Token 등 3자 인증방식으로 session을 사용하지 않는다.
+          - cashable
+          - 계층적 구조로 구성되어야한다.
 
-              - 하나의 큰 어플리케이션을 만들기 위해 여러개의 어플리케이션으로 잘게 쪼개서 합치는 방식
-
-            - 트랜잭션이란?
-
-              - DB 결과에 영향을 줄 수 있는 작업의 단위
-              - 원자성(Atomicity)
-                - 트랜잭션이 DB에 모두 반영되던지 아니면 모두 반영 안되던지
-              - 일관성(Consistency)
-                - 도중에 DB가 업데이트 되어도 트랜잭션의 처리 결과가 달라져서는 안된다.
-              - 독립성(Isolation)
-                - 하나의 트랜잭션의 처리 결과가 다른 트랜잭션의 처리 결과에 영향을 줘서는 안된다.
-              - 지속성(Durability)
-
-                - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
-
-            </details>
-
-              <details>
-                <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블변경하기</summary>
-
-            - 참고자료 : https://dailytaeho.tistory.com/20
+            - 클라이언트 -> 컨트롤러 -> 서비스 -> 레파지토리 -> DB
 
               </details>
 
                 <details>
-                  <summary>2022.03.03 : Intellij 단축키</summary>
+                  <summary>2022.02.02 : 트랜잭션, MSA</summary>
 
-              - generate something : command + n
-              - 클래스, 패키지 등 생성 : command + 1 -> command + n
-              - 편집기로 이동 : ESC
+              - MSA란?? (Microservice Architecture)
 
-                </details>
+                - 하나의 큰 어플리케이션을 만들기 위해 여러개의 어플리케이션으로 잘게 쪼개서 합치는 방식
+
+              - 트랜잭션이란?
+
+                - DB 결과에 영향을 줄 수 있는 작업의 단위
+                - 원자성(Atomicity)
+                  - 트랜잭션이 DB에 모두 반영되던지 아니면 모두 반영 안되던지
+                - 일관성(Consistency)
+                  - 도중에 DB가 업데이트 되어도 트랜잭션의 처리 결과가 달라져서는 안된다.
+                - 독립성(Isolation)
+                  - 하나의 트랜잭션의 처리 결과가 다른 트랜잭션의 처리 결과에 영향을 줘서는 안된다.
+                - 지속성(Durability)
+
+                  - 트랜잭션이 성공적으로 마무리 되었을 때 그 결과는 영구적으로 반영되어야 한다.
+
+              </details>
 
                 <details>
-                  <summary>2022.03.23 : 에러처리 동기 vs 비동기</summary>
+                  <summary>2022.02.16 : ALGORITHM=INPLACE, LOCK=NONE으로 테이블변경하기</summary>
 
-                - 동기 : try ~ catch문으로 에러 처리
-                - 비동기 : 콜백함수 내에서 에러처리 (try ~ catch문으로 잡아도 외부에서 확인이 불가능함)
+              - 참고자료 : https://dailytaeho.tistory.com/20
 
                 </details>
 
-              <details>
-                <summary>2022.03.24 : express 유용한 내부, 외부 middleware</summary>
+                  <details>
+                    <summary>2022.03.03 : Intellij 단축키</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/22
+                - generate something : command + n
+                - 클래스, 패키지 등 생성 : command + 1 -> command + n
+                - 편집기로 이동 : ESC
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.03.28 : Mongoose</summary>
+                  <details>
+                    <summary>2022.03.23 : 에러처리 동기 vs 비동기</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/23
+                  - 동기 : try ~ catch문으로 에러 처리
+                  - 비동기 : 콜백함수 내에서 에러처리 (try ~ catch문으로 잡아도 외부에서 확인이 불가능함)
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.03.29 : MongoParseError: options usecreateindex, usefindandmodify are not supported</summary>
+                  <details>
+                    <summary>2022.03.24 : express 유용한 내부, 외부 middleware</summary>
 
-              - Mongoose 버전 6.0이상부터 useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false는 디폴트
-              - 따라서 작성하지 않아도 되며 제거 시 정상 동작
+                  - 참고자료 : https://dailytaeho.tistory.com/22
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.03.31 : SQL 최대값 행 한개 출력</summary>
+                  <details>
+                    <summary>2022.03.28 : Mongoose</summary>
 
-              ```sql
-                SELECT *
-                FROM TABLE
-                ORDER BY A DESC
-                LIMIT 0, 1;
-              ```
+                  - 참고자료 : https://dailytaeho.tistory.com/23
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.06 : mongodump, mongorestore</summary>
+                  <details>
+                    <summary>2022.03.29 : MongoParseError: options usecreateindex, usefindandmodify are not supported</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/25
+                  - Mongoose 버전 6.0이상부터 useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false는 디폴트
+                  - 따라서 작성하지 않아도 되며 제거 시 정상 동작
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.07 : 'node_env'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다</summary>
+                  <details>
+                    <summary>2022.03.31 : SQL 최대값 행 한개 출력</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/26
+                  ```sql
+                    SELECT *
+                    FROM TABLE
+                    ORDER BY A DESC
+                    LIMIT 0, 1;
+                  ```
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.11 : Azure, Azure App Service</summary>
+                  <details>
+                    <summary>2022.04.06 : mongodump, mongorestore</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/28
+                  - 참고자료 : https://dailytaeho.tistory.com/25
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.12 : Azure 관련 용어</summary>
+                  <details>
+                    <summary>2022.04.07 : 'node_env'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/29
+                  - 참고자료 : https://dailytaeho.tistory.com/26
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.13 : Azure Pipelines</summary>
+                  <details>
+                    <summary>2022.04.11 : Azure, Azure App Service</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/30
+                  - 참고자료 : https://dailytaeho.tistory.com/28
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.14 : MongoDB Sharding</summary>
+                  <details>
+                    <summary>2022.04.12 : Azure 관련 용어</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/31
+                  - 참고자료 : https://dailytaeho.tistory.com/29
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.18 : Mongoose Schema enum</summary>
+                  <details>
+                    <summary>2022.04.13 : Azure Pipelines</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/32
+                  - 참고자료 : https://dailytaeho.tistory.com/30
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.19 : Mongoose Schema 생성</summary>
+                  <details>
+                    <summary>2022.04.14 : MongoDB Sharding</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/33
+                  - 참고자료 : https://dailytaeho.tistory.com/31
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.22 : mongoDB compass query</summary>
+                  <details>
+                    <summary>2022.04.18 : Mongoose Schema enum</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/34
+                  - 참고자료 : https://dailytaeho.tistory.com/32
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.04.29 : Azure Partner Center</summary>
+                  <details>
+                    <summary>2022.04.19 : Mongoose Schema 생성</summary>
 
-              - Partner Center
-                - MS와 Customer 사이의 비즈니스 프로세스를 관리
-                - 계정관리, 보안, 데이터 관리 등
+                  - 참고자료 : https://dailytaeho.tistory.com/33
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.02 : PowerShell에서 Azure 명령어 사용하기</summary>
+                  <details>
+                    <summary>2022.04.22 : mongoDB compass query</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/35
+                  - 참고자료 : https://dailytaeho.tistory.com/34
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.03 : Graph API를 사용하기 위한 Token 발급</summary>
+                  <details>
+                    <summary>2022.04.29 : Azure Partner Center</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/36
+                  - Partner Center
+                    - MS와 Customer 사이의 비즈니스 프로세스를 관리
+                    - 계정관리, 보안, 데이터 관리 등
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.09 : mongoose.Schema : default: () => []</summary>
+                  <details>
+                    <summary>2022.05.02 : PowerShell에서 Azure 명령어 사용하기</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/37
+                  - 참고자료 : https://dailytaeho.tistory.com/35
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.10 : MongoDB Aggregation : $arrayElemAt, $ifNull</summary>
+                  <details>
+                    <summary>2022.05.03 : Graph API를 사용하기 위한 Token 발급</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/38
+                  - 참고자료 : https://dailytaeho.tistory.com/36
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.11 : express router methods</summary>
+                  <details>
+                    <summary>2022.05.09 : mongoose.Schema : default: () => []</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/39
+                  - 참고자료 : https://dailytaeho.tistory.com/37
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.05.25 : Joi로 validation check</summary>
+                  <details>
+                    <summary>2022.05.10 : MongoDB Aggregation : $arrayElemAt, $ifNull</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/40
+                  - 참고자료 : https://dailytaeho.tistory.com/38
 
-              </details>
+                  </details>
 
-              <details>
-                <summary>2022.06.16 : MongoDB에서 필드 update하기</summary>
+                  <details>
+                    <summary>2022.05.11 : express router methods</summary>
 
-              - 참고자료 : https://dailytaeho.tistory.com/46
+                  - 참고자료 : https://dailytaeho.tistory.com/39
 
-              </details>
+                  </details>
+
+                  <details>
+                    <summary>2022.05.25 : Joi로 validation check</summary>
+
+                  - 참고자료 : https://dailytaeho.tistory.com/40
+
+                  </details>
+
+                  <details>
+                    <summary>2022.06.16 : MongoDB에서 필드 update하기</summary>
+
+                  - 참고자료 : https://dailytaeho.tistory.com/46
+
+                  </details>
+
+                  <details>
+                    <summary>2022.07.05 : MongoDB 사칙연산 쿼리</summary>
+
+                  - 참고자료 : https://dailytaeho.tistory.com/47
+
+                  </details>
 
           </details>
