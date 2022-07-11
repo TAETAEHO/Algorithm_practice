@@ -33,5 +33,4 @@ function solution2(numbers) {
   return sum.sort((a, b) => a - b);
 }
 
-solution2([2, 1, 3, 4, 1]); // [2,3,4,5,6,7]
-// [1, 1, 2, 3, 4]
+solution2([2, 1, 3, 4, 1]);
