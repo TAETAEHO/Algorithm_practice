@@ -654,4 +654,11 @@
 
                   </details>
 
+                  <details>
+                    <summary>2022.09.01 : JavaScript delete 연산자</summary>
+
+                  - 참고자료 : https://dailytaeho.tistory.com/53
+
+                  </details>
+
           </details>
