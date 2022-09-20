@@ -661,4 +661,11 @@
 
                   </details>
 
+                  <details>
+                    <summary>2022.09.20 : MongoDB Query for documents array size is greater than</summary>
+
+                  - 참고자료 : https://dailytaeho.tistory.com/55
+
+                  </details>
+
           </details>
