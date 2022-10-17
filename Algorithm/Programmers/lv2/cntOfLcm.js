@@ -10,4 +10,8 @@
  * arr의 원소는 100 이하인 자연수입니다.
  */
 
-function solution(arr) {}
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+
+function solution(arr) {
+  return arr.reduce((a, b) => (a * b) / gcd(a, b));
+}
