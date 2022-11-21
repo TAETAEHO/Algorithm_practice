@@ -14,13 +14,15 @@
  */
 
 function solution(n, a, b) {
-  let competitors = [];
-  let cnt;
+  let cnt = 0;
 
-  // [1,2,3,4,5,6,7,8]
-  for (let i = 1; i <= n; i++) {
-    competitors.push(i);
+  while (a !== b) {
+    a = Math.round(a / 2);
+    b = Math.round(b / 2);
+    cnt++;
   }
+
+  return cnt;
 }
 
 solution(8, 4, 7);
