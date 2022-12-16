@@ -49,4 +49,37 @@
   maker.fillCoffeeBeans(32);
 
   console.log(maker);
+
+  class User {
+    // private firstName: string;
+    // private lastName: string;
+    // fullName: string;
+
+    get fullName(): string {
+      return `${this.firstName} ${this.lastName}`;
+    }
+
+    private internalAge = 4;
+    get age(): number {
+      // return 3;
+      return this.internalAge;
+    }
+    set age(num: number) {
+      if (num < 0) throw new Error("Invalid age");
+      this.internalAge = num;
+    }
+
+    // constructor(firstName: string, lastName: string) {
+    //   this.firstName = firstName;
+    //   this.lastName = lastName;
+    //   // this.fullName = `${firstName} ${lastName}`;
+    // }
+    constructor(private firstName: string, private lastName: string) {}
+  }
+
+  const user = new User("Taeho", "Kim");
+  console.log(user);
+  console.log(user.fullName);
+
+  user.age = 6;
 }
