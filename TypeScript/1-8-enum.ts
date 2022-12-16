@@ -22,6 +22,11 @@
     Sunday,
   }
 
+  // TypeScript는 union type으로 대체해서 사용
+  type DaysOfWeek = "Monday" | "Tuesday" | "Wednesday";
+  let dayOfTWeek: DaysOfWeek = "Monday";
+  dayOfTWeek = "Wednesday";
+
   //   enum Days {
   //     Monday = 1,
   //     Tuesday,
