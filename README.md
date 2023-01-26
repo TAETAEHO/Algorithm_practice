@@ -669,3 +669,14 @@
                   </details>
 
           </details>
+
+        <details>
+          <summary>2023 학습</summary>
+          <details>
+          <summary>2023.01.26 : mongodb findOne without _id, mongodb find performance compare to aggregate</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/62
+
+        </details>
+
+        </details>
