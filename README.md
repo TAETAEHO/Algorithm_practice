@@ -679,4 +679,11 @@
 
         </details>
 
+        <details>
+          <summary>2023.02.21 : joi 버전 업데이트로 인한 email() 메서드 에러</summary>
+
+        - 참고자료 : https://dailytaeho.tistory.com/63
+
+        </details>
+
         </details>
