@@ -34,6 +34,7 @@
 
   // 생성자 호출
   const maker = new CoffeeMaker(32);
+  // const maker1 = CoffeeMaker.makeMachine(1);
   console.log(maker);
 
   const maker3 = CoffeeMaker.makeMachine(3);
