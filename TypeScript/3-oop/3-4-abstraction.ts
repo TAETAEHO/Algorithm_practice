@@ -104,6 +104,6 @@
   maker2.clean();
 
   const maker3: CoffeeMachine = CoffeeMachine.makeMachine(32);
-  const amateur = new AmateurUser(maker3);
+  // const amateur = new AmateurUser(maker3);
   const pro = new ProBarista(maker3);
 }
