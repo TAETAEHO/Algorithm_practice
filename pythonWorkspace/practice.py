@@ -81,3 +81,18 @@ print('redd\bapple')
 subway = ['유재석', '박명수']
 subway.insert(1, '정형돈')
 print(subway)
+subway.append('유재석')
+print(subway)
+print(subway.count('유재석'))
+
+num_list = [5, 2, 3, 6, 1]
+num_list.sort()
+print(num_list)
+num_list.reverse()
+print(num_list)
+# num_list.clear()
+# print(num_list)
+num_list.extend(subway)
+print(num_list)
+
+# 딕셔너리 : key-value
